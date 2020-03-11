@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "TrainingAsset": {
+            "$ref": "#/definitions/TrainingAsset"
+        }
+    },
+    "required": [
+        "TrainingAsset"
+    ],
+    "title": "TrainingAsset",
+    "definitions": {
+        "TrainingAsset": {
+            "$id": "#/properties/TrainingAsset",
+            "type": "object",
+            "title": "The TrainingAsset Schema",
+            "required": [],
+            "properties": {
+                "name": {
+                    "$id": "#/properties/name",
+                    "type": "string",
+                    "$comment": "Room name"
+                },
+                "department": {
+                    "$id": "#/properties/department",
+                    "type": "string",
+                    "$comment": "Department name"
+                },
+                "city": {
+                    "$id": "#/properties/city",
+                    "type": "string",
+                    "$comment": "City name"
+                },
+                "location": {
+                    "$id": "#/properties/location",
+                    "type": "string",
+                    "$comment": "Location details"
+                },
+                "type": {
+                    "$id": "#/properties/type",
+                    "$ref": "Common.json#/definitions/TrainingAssetType"
+                },
+                "seatingCapacity": {
+                    "$id": "#/properties/seatingCapacity",
+                    "type": "integer",
+                    "$comment": "Seating Capacity"
+                },
+                "projectorAvailable": {
+                    "$id": "#/properties/projectorAvailable",
+                    "$ref": "Common.json#/definitions/YesNoCode"
+                },
+                "numberOfProjectors": {
+                    "$id": "#/properties/numberOfProjectors",
+                    "type": "integer",
+                    "$comment": "Number of projectors available"
+                },
+                "videoConferenceAvailable": {
+                    "$id": "#/properties/videoConferenceAvailable",
+                    "$ref": "Common.json#/definitions/YesNoCode"
+                },
+                "aVAvailable": {
+                    "$id": "#/properties/aVAvailable",
+                    "$ref": "Common.json#/definitions/YesNoCode"
+                }
+            }
+        }
+    },
+    "_osConfig": {}
+}

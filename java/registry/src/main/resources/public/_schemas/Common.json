@@ -156,6 +156,15 @@
         "YesNoCode-YES",
         "YesNoCode-NO"
       ]
+    },
+    "TrainingAssetType": {
+      "type": "string",
+      "enum": [
+        "TrainingAssetType-CLASSROOM",
+        "TrainingAssetType-LABORATORY",
+        "TrainingAssetType-CONFERENCEROOM",
+        "TrainingAssetType-RESEARCHROOM"
+      ]
     }
   }
 }
